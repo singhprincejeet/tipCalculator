@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.princejeetsinghsan.tipcalculatorkotlin.ResultActivity">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="6"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/billAmountDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bill amount: "
+            android:textSize="30sp"
+            android:textColor="@color/colorText" />
+
+
+
+        <TextView
+            android:id="@+id/billAmountValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textColor="@color/colorText" />
+
+        <TextView
+            android:id="@+id/tipAmountDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tip amount:"
+            android:textSize="30sp"
+            android:textColor="@color/colorText" />
+
+        <TextView
+            android:id="@+id/tipAmountValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textColor="@color/colorText" />
+
+        <TextView
+            android:id="@+id/totalDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total:"
+            android:textSize="30sp"
+            android:textColor="@color/colorText" />
+
+        <TextView
+            android:id="@+id/totalAmountValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textColor="@color/colorText"/>
+
+        <TextView
+            android:id="@+id/billPerPersonDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bill per person: "
+            android:textSize="30sp"
+            android:textColor="@color/colorText" />
+
+        <TextView
+            android:id="@+id/billPerPersonValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textColor="@color/colorText"/>
+
+        <TextView
+            android:id="@+id/tipPerPersonDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tip per person: "
+            android:textSize="30sp"
+            android:textColor="@color/colorText" />
+
+        <TextView
+            android:id="@+id/tipPerPersonValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textColor="@color/colorText"/>
+
+        <TextView
+            android:id="@+id/totalPerPersonDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total per person: "
+            android:textSize="30sp"
+            android:textColor="@color/colorText" />
+
+        <TextView
+            android:id="@+id/totalPerPersonValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textColor="@color/colorText"/>
+
+    </GridLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.princejeetsinghsan.tipcalculatorkotlin.MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="3"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/billAmountTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bill amount"
+                android:textSize="30sp"
+                android:textColor="@color/colorText"/>
+
+            <EditText
+                android:id="@+id/billAmountET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginLeft="20sp"
+                android:layout_marginStart="20sp"
+                android:digits="0123456789."
+                android:width="60sp"
+                android:hint="000"
+                android:textSize="30sp"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/tipPercentageTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tip percentage"
+                android:textSize="30sp"
+                android:textColor="@color/colorText"/>
+
+            <EditText
+                android:id="@+id/tipPercentageET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginStart="20sp"
+                android:singleLine="true"
+                android:digits="0123456789."
+                android:width="60sp"
+                android:hint="000"
+                android:textSize="30sp"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/noOfPeopleTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isScrollContainer="false"
+                android:scrollHorizontally="true"
+                android:text="No of people"
+                android:textColor="@color/colorText"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/noOfPeopleET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginStart="20sp"
+                android:singleLine="true"
+                android:width="60sp"
+                android:digits="0123456789."
+                android:inputType="number"
+                android:text="1"
+                android:textSize="30sp" />
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/calculateButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:onClick="OnCalculateButtonClick"
+                android:padding="10sp"
+                android:text="Calculate"
+                android:textColor="@android:color/white" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/suggestTipButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:background="@color/colorAccent"
+                android:padding="10sp"
+                android:text="Suggest a tip"
+                android:textColor="@android:color/white" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
